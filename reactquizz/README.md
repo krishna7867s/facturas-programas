@@ -1,5 +1,15 @@
 # React + Vite
 
+## Proyección de ingresos
+
+La proyección de ingresos se calcula como el promedio de los últimos 3 periodos de facturación registrados en el dashboard.
+
+En la lógica del proyecto, primero se agrupan los ingresos por mes con `byPeriod`, luego se toman los últimos 3 elementos del arreglo y se promedian:
+
+- `projection = byPeriod.slice(-3).reduce((sum, period) => sum + period.revenue, 0) / Math.min(byPeriod.length, 3)`
+
+Esto permite estimar el ingreso mensual esperado a partir de la tendencia reciente, usando los periodos más actuales como referencia.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
