@@ -1,0 +1,1 @@
+export default function BrandAside() { return <aside className="brand-aside"><img src="https://i.ibb.co/L6S9f30/invader-zim.png" alt="Personaje pixelado retro" /><div><strong>RAWR!</strong><span>DISLIKES &gt;:(</span><small>guestbook / 1337</small></div></aside> }
